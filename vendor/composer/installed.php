@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
-        'name' => 'julio/vagas',
+        'reference' => 'ca51b9471ddf756a4388da8f225066e35257ef20',
+        'name' => 'wdev/vagas',
         'dev' => true,
     ),
     'versions' => array(
-        'julio/vagas' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+        'wdev/vagas' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'ca51b9471ddf756a4388da8f225066e35257ef20',
             'dev_requirement' => false,
         ),
     ),
