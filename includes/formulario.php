@@ -26,13 +26,13 @@
       <div>
         <div class="form-check form-check-inline">
           <label class="form-control">
-            <input type="radio" name="ativo" value="s" checked> Ativo
+            <input type="radio" name="ativo" value="S" checked> Ativo
           </label>
         </div>
 
         <div class="form-check form-check-inline">
           <label class="form-control">
-            <input type="radio" name="ativo" value="n" <?= $obVaga->ativo == 'n' ? 'checked' : '' ?>> Inativo
+            <input type="radio" name="ativo" value="N" <?= $obVaga->ativo == 'S' ? 'checked' : '' ?>> Inativo
           </label>
         </div>
       </div>
@@ -40,7 +40,7 @@
     </div>
 
     <div class="form-group">
-      <button type="submit" class="btn btn-success">Enviar</button>
+      <button type="submit" class="btn btn-success">Enviar Vaga</button>
     </div>
 
   </form>

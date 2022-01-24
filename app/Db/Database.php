@@ -91,7 +91,7 @@ class Database{
     $binds  = array_pad([],count($fields),'?');
 
     //MONTA A QUERY
-    $query = 'INSERT INTO '.$this->table.' ('.implode(',',$fields).') VALUES ('.implode(',',$binds).')';
+    $query = 'INSERT INTO '.$this->table.' ('.implode(',',$fields).') VALUES ('.implode(',',$binds).')'; //implode pega os dados do array e concatena com ,
 
     //EXECUTA O INSERT
     $this->execute($query,array_values($values));
