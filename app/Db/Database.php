@@ -101,7 +101,7 @@ class Database{
   }
 
   /**
-   * Método responsável por executar uma consulta no banco
+   * Método responsável por executar o SELECT no banco
    * @param  string $where
    * @param  string $order
    * @param  string $limit
@@ -110,7 +110,7 @@ class Database{
    */
   public function select($where = null, $order = null, $limit = null, $fields = '*'){
     //DADOS DA QUERY
-    $where = strlen($where) ? 'WHERE '.$where : '';
+    $where = strlen($where) ? 'WHERE '.$where : ''; // se possuir valor atribui WHERE senão fica vazio.
     $order = strlen($order) ? 'ORDER BY '.$order : '';
     $limit = strlen($limit) ? 'LIMIT '.$limit : '';
 

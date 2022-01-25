@@ -13,7 +13,7 @@ if (isset($_GET['status'])) {
   }
 }
 
-$resultados = '';
+$resultados = '';//criado para guardar os resultados/html para exibir no body
 foreach ($vagas as $vaga) {
   $resultados .= '<tr>
                       <td>' . $vaga->id . '</td>

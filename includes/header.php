@@ -17,6 +17,6 @@
   <div class="container">
 
     <div class="jumbotron bg-warning">
-      <h1>Cadastro de Vagas e Oportunidades</h1>
+      <h1>Painel de Cadastro de Vagas e Oportunidades</h1>
       <p><h4>CRUD com PHP Orientados a Objetos</h4></p>
     </div>

@@ -80,7 +80,7 @@ class Vaga
    */
   public function excluir()
   {
-    return (new Database('oportunidades_vagas'))->delete('id = ' . $this->id);
+    return (new Database('oportunidades_vagas'))->delete('id = ' . $this->id);// delete na vaga com id do banco igual da instancia da classe.
   }
 
   /**
@@ -92,8 +92,8 @@ class Vaga
    */
   public static function getVagas($where = null, $order = null, $limit = null)
   {
-    return (new Database('oportunidades_vagas'))->select($where, $order, $limit)
-      ->fetchAll(PDO::FETCH_CLASS, self::class);
+    return (new Database('oportunidades_vagas'))->select($where, $order, $limit) // select método no Database.php
+      ->fetchAll(PDO::FETCH_CLASS, self::class); // retorna objeto da classe com as vagas.
   }
 
   /**
